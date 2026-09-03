@@ -3,27 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectura por el mundo</title>
+    <meta name="description" content="Galería de fotografías propias sobre arquitectura y lugares icónicos visitados por Homero Gonzalez.">
+    <title>Arquitectura por el mundo | Homero Gonzalez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <main>
-        <h1>Arquitectura por el mundo</h1>
-        <h2>Homero Gonzalez</h2>
+<body class="pagina-inicio">
+    <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
 
-        <p>
-            Esta futura galería visual mostrará fotografías de arquitectura y
-            lugares icónicos del mundo que conocí durante mis viajes.
-        </p>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="Ir al inicio"><i class="bi bi-house marca-icono" aria-hidden="true"></i><span>Inicio</span></a>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="#propuesta">La propuesta</a>
+            <a href="#destinos">Destinos</a>
+        </nav>
+    </header>
 
-        <p>
-            Incluirá imágenes de edificios, monumentos y ciudades, acompañadas
-            por una breve descripción del lugar.
-        </p>
+    <main id="contenido">
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div class="hero-contenido">
+                <p class="sobrelinea">Galería fotográfica · Homero Gonzalez</p>
+                <h1 id="titulo-principal">Arquitectura<br><em>por el mundo</em></h1>
+                <p class="hero-texto">Un recorrido personal por edificios, monumentos y lugares icónicos que conocí durante mis viajes.</p>
+                <a class="boton" href="#destinos">Comenzar el recorrido</a>
+            </div>
+            <figure class="hero-imagen">
+                <img src="imagenes/foto_portada.jpg" alt="Vista desde la ventanilla de un avión sobre las nubes">
+                <figcaption>El viaje empieza desde la ventanilla.</figcaption>
+            </figure>
+        </section>
 
-        <img src="imagenes/foto_portada.jpg" alt="Arquitectura y lugares del mundo" width="600">
+        <section class="propuesta" id="propuesta" aria-labelledby="titulo-propuesta">
+            <p class="numero-seccion">01</p>
+            <div>
+                <p class="sobrelinea">La propuesta</p>
+                <h2 id="titulo-propuesta">Mirar el mundo a través de su arquitectura</h2>
+            </div>
+            <p>Esta galería reúne fotografías propias tomadas durante mis viajes. Cada destino guarda una forma distinta de construir, habitar y contar su historia.</p>
+        </section>
 
-        <p><a href="README.md">Ver documentación</a></p>
+        <section class="destinos" id="destinos" aria-labelledby="titulo-destinos">
+            <div class="titulo-seccion">
+                <div><p class="sobrelinea">Siete destinos · Veintidós fotografías</p><h2 id="titulo-destinos">Elegí tu próximo destino</h2></div>
+                <span class="sello">Fotos<br>propias</span>
+            </div>
 
+            <div class="grilla-destinos">
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="argentina.html"><img src="imagenes/cerro_catedral_bariloche_arg.jpg" alt="Cerro Catedral en Bariloche" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇦🇷</span></a>
+                    <div class="tarjeta-info"><div><p>01 · Sudamérica</p><h3>Argentina</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="espana.html"><img src="imagenes/sagrada_familia_brc_esp.jpg" alt="Interior de la Sagrada Familia en Barcelona" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇪🇸</span></a>
+                    <div class="tarjeta-info"><div><p>02 · Europa</p><h3>España</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="estados-unidos.html"><img src="imagenes/brooklyn_bridge_nyc_usa.jpg" alt="Puente de Brooklyn en Nueva York" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇺🇸</span></a>
+                    <div class="tarjeta-info"><div><p>03 · Norteamérica</p><h3>Estados Unidos</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="francia.html"><img src="imagenes/torre_eiffel_paris_fran.jpg" alt="Torre Eiffel iluminada por la noche" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇫🇷</span></a>
+                    <div class="tarjeta-info"><div><p>04 · Europa</p><h3>Francia</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="italia.html"><img src="imagenes/coliseo_romano_rom_ita.jpg" alt="Fachada del Coliseo romano" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇮🇹</span></a>
+                    <div class="tarjeta-info"><div><p>05 · Europa</p><h3>Italia</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="reino-unido.html"><img src="imagenes/big_beng_london_uk.jpg" alt="Big Ben y el Parlamento de Londres" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇬🇧</span></a>
+                    <div class="tarjeta-info"><div><p>06 · Europa</p><h3>Reino Unido</h3></div></div>
+                </article>
+                <article class="tarjeta-destino">
+                    <a class="tarjeta-imagen" href="vaticano.html"><img src="imagenes/capilla_sixtina_vat_vat.jpg" alt="Interior de la Capilla Sixtina" loading="lazy"><span class="tarjeta-bandera" aria-hidden="true">🇻🇦</span></a>
+                    <div class="tarjeta-info"><div><p>07 · Europa</p><h3>Vaticano</h3></div></div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer class="pie">
+        <div><strong>Arquitectura por el mundo</strong></div>
+        <p>Galería visual de Homero Gonzalez · 2026</p>
+        <a href="#contenido">Volver arriba</a>
+    </footer>
 </body>
 </html>
