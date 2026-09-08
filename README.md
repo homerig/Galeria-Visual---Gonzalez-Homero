@@ -47,6 +47,12 @@ El diseño se mantiene simple. Las fotografías son el elemento visual principal
 
 El encabezado incluye un enlace de **Inicio** acompañado por un icono de casa de [Bootstrap Icons](https://icons.getbootstrap.com/). El pie de página conserva el nombre de la galería y un enlace para volver arriba.
 
+En las tarjetas de la página principal elegí usar emojis de banderas dentro de círculos para identificar rápidamente cada país. Son parte de la propuesta visual y acompañan el nombre escrito de cada destino. Las banderas son caracteres Unicode, su apariencia puede variar según el dispositivo o el sistema operativo.
+
+### Diseño responsive
+
+El sitio utiliza Flexbox, CSS Grid, unidades relativas y media queries para adaptar los contenidos a distintos tamaños de pantalla. Realicé una revisión visual de la página y comprobé que el diseño se adapta correctamente.
+
 ## Tecnologías utilizadas
 
 - HTML5 para la estructura y el contenido.
@@ -55,7 +61,9 @@ El encabezado incluye un enlace de **Inicio** acompañado por un icono de casa d
 
 ## Recorrido de la galería
 
-La galería no tiene un recorrido obligatorio. La propuesta es de exploración libre: cada persona puede elegir el país que quiera visitar, recorrer sus fotografías y luego continuar hacia otro destino o regresar al inicio. De esta manera, la navegación busca que la persona se sumerja en la galería y descubra su contenido a su propio ritmo.
+Elegí una navegación que propone recorrer los destinos de forma secuencial, como las etapas de un viaje. Desde la página principal se puede elegir cualquier país y, al finalizar sus fotografías, los enlaces inferiores permiten pasar al destino anterior o al siguiente. El recorrido conecta Argentina, España, Estados Unidos, Francia, Italia, Reino Unido y Vaticano, y vuelve a comenzar en Argentina.
+
+El encabezado mantiene los accesos a Inicio, La propuesta y Destinos. El enlace a Todos los destinos permite volver al listado y elegir otro país en cualquier momento. La decisión de concentrar la selección de países en la página principal busca mantener un encabezado simple y dar protagonismo a las fotografías, mientras que la navegación inferior invita a continuar el recorrido.
 
 ## Estructura del proyecto
 
